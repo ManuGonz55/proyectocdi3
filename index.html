@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDI</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="portada">
+            <div class="barra-portada">
+                <img src="./img/equipos/escudoCDI.png" alt="Escudo CDI">
+                <h1><span class="small-text">Club Deportivo</span> <br> Independencia</h1>
+            </div>
+            <div class="publicidad-container">
+                <div class="publicidad">Publicidad1</div>
+                <div class="publicidad">Publicidad2</div>
+                <div class="publicidad">Publicidad3</div>
+                <div class="publicidad">Publicidad4</div>
+                <div class="publicidad">Publicidad5</div>
+            </div>
+    </section>
+    
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="imgnav" src="./img/equipos/escudoCDI.png" alt="Logo CDI">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Noticias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Primera</a></li>
+                            <li><a class="dropdown-item" href="#">Reserva</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Femenino</a></li>
+                            <li><a class="dropdown-item" href="#">Inferiores</a></li>
+                            <li><a class="dropdown-item" href="#">Escuelita</a></li>
+                            <li><a class="dropdown-item" href="#">Patin</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SOCIOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CLUB
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HISTORIA</a></li>
+                            <li><a class="dropdown-item" href="#">INFREAESTRUCTURA</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">COMISION DIRECTIVA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TIENDA</a>
+                    </li>
+                </ul>
+                <div class="cart-icon" onclick="verCarrito()">
+                    <img src="./img/logos/carrito.png" alt="Carrito">
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <div class="grid-container">
+                <div class="grid-item primera">
+                    <img src="./img/caja/DSC06091.jpg" alt="Imagen 1">
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia-p">Noticias primera</span>
+                    </a>
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia-r">Noticias reserva</span>
+                    </a>
+                </div>
+                <div class="grid-item inferiores">
+                    <img src="./img/caja/MAT03970.jpg" alt="Imagen 2">
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia">Noticias femenino</span>
+                    </a>
+                </div>
+                <div class="grid-item femenino">
+                    <img src="./img/caja/MAT04013.jpg" alt="Imagen 3">
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia">Noticias inferiores</span>
+                    </a>
+                </div>
+                <div class="grid-item escuelita">
+                    <img src="./img/caja/MAT04025.jpg" alt="Imagen 4">
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia">Noticias escuelita</span>
+                    </a>
+                </div>
+                <div class="grid-item patin">
+                    <img src="./img/caja/MAT04032.jpg" alt="Imagen 5">
+                    <a href="#" target="_blank" class="noticia-enlace">
+                        <span class="link-noticia">Noticias patin</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h3 class="redes-sociales">Seguinos</h3>
+                <ul class="lista-redes">
+                    <li>
+                        <a href="https://www.instagram.com/clubindependenciachaves/" target="_blank">
+                        <img src="./img/logos/logoig.png" alt="instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/160467914001837" target="_blank">
+                        <img src="./img/logos/logofb.png" alt="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <h5 class="informacion">Informacion</h5>
+                <div class="inform">
+                    <p><strong>Adolfo González Chaves</strong></p>
+                    <p><strong>Av. Juarez y España</strong></p>
+                    <p><strong>Since: 1911 - ∞</strong></p>
+                </div>
+
+            </div>
+
+            <div class="contactanos-footer">
+                <h5 class="contactate">Contactanos</h5>
+                <div class="datos">
+                    <div class="telefono">
+                        <img src="./img/logos/logotelefono.png" alt="">
+                        <p><strong>2983-512929</strong></p>
+                    </div>
+                    <div class="email">
+                        <img src="./img/logos/logo email.jpg" alt="">
+                        <p><strong>manu02gonzalez@gmail.com</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-logo">
+                <img src="./img/equipos/escudoCDI.png" alt="logocdi">
+            </div>
+
+            <p class="yo">Desarrollador: Manuel Gonzalez</p>
+        </div>
+    </footer>
+
+    
+
+
+
+</body>
+</html>

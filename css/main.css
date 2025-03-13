@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: black;
+}
+
+.portada {
+    background-color: black;
+}
+
+.barra-portada {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100px;
+}
+
+.barra-portada h1 {
+    color: rgb(242, 242, 242);
+    font-size: 30px;
+    flex-direction: column;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+.small-text {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.barra-portada img {
+    width: 60px;
+    height: 70px;
+    margin-left: 40px;
+}
+
+.publicidad-container {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 15%;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+   
+.container-fluid {
+    gap: 15px;
+}
+
+.imgnav {
+    width: 40px;
+    opacity: 0;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.cart-icon img {
+    width: 30px;
+}
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    width: 97vw;
+    height: 90vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.grid-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, scale 0.3s e;
+    margin: 0;
+    padding: 0;
+}
+
+.link-noticia {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.link-noticia-p {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.link-noticia-r {
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.link-noticia:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    object-position: center;
+}
+
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.primera {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.inferiores, .femenino, .escuelita, .patin {
+    grid-column: span 1;
+}
+
+.primera img, .inferiores img {
+    transform-origin: top;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    height: auto;
+  }
+
+  .social-media img, .extra-logo img {
+    width: 40px;
+    margin: 5px;
+  }
+
+  .social-media, .info, .extra-logo {
+    margin: 10px;
+  }
+
+  .redes-sociales {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .lista-redes {
+    list-style: none;
+  }
+
+  .informacion {
+    font-size: 30px;
+  }
+
+  .inform {
+    font-size: 12px;
+  }
+
+  .info p {
+    margin: 5px 0;
+}
+
+.yo {
+    font-size: 10px;
+    margin-top: auto;
+}
+
+.contactate {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.datos {
+    margin: 5px;
+}
+
+.contactanos-footer p {
+    margin: 5px 0;
+}
+
+.telefono {
+    display: flex;
+}
+
+.telefono img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.email {
+    display: flex;
+}
+
+.email img {
+    width: 30px;
+    height: 30px;
+}
